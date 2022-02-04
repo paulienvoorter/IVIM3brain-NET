@@ -51,7 +51,7 @@ if arg.fit.do_fit:
 else:
     matNN, stability = sim.sim(arg.sim.SNR, arg)
 
-# if repeat is higher than 1, then print stability 
+# if repeat is higher than 1, then print stability (stability was not explored in publication)
 if arg.sim.repeats > 1:
     print('\nstability of NN for Dpar, fint, Dint, fmv and Dmv:')
     print(stability)
@@ -67,7 +67,7 @@ if arg.fit.do_fit:
 else:
     np.save('{}/results-PINN-lr{}_ensemble{}'.format(pathresults,arg.train_pars.lr, arg.sim.n_ensemble), matNN)
     
-#plot correlation matrix of parameter dependencies
+#plot correlation matrix of parameter dependencies (not explored in publication)
 #PINN
 rhomatrix = [[1,round(matNN[3][3],2),round(matNN[1][4],2),round(matNN[2][4],2),round(matNN[0][4],2)],
              [round(matNN[3][3],2),1,round(matNN[4][3],2),round(matNN[0][3],2),round(matNN[3][4],2)],
