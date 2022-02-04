@@ -433,7 +433,7 @@ def plot_pred_vs_true(Dpar, fint, Dint, fmv, Dmv, paramsNN, paramslsq, paramsnnl
     plt.close('all')
     
 def plot_dependency_figs(D, fint, Dint, f, Dp, params, method):
-    # visualizes the interdependency between the fitted parameters.
+    """visualizes the interdependency between the fitted parameters. (not explored in publication)"""
 
     pathresults = '{folder}/results'.format(folder=os.getcwd())
 
