@@ -4,7 +4,7 @@ This repository contains the code regarding our submitted publication: Physics-i
 
 ## Description
 This code synthesizes three-component IVIM decay curves. Several fitting algorithms are implemented to fit the IVIM model to these synthesized curves: least squares (LSQ), non-negative least squares (NNLS) and physics-informed neural networks (PI-NN). 
-Several options for the PI-NN architecture and IVIM parameter constraints are possible.
+Several options for the PI-NN architecture and IVIM parameter constraints can be explored.
 
 ## Getting Started
 To directly run the code, we added a '.yml' file which can be run in anaconda. To create a conda environment with the '.yml' file enter the command below in the terminal: conda env create -f environment.yml 
