@@ -29,7 +29,10 @@ Paulien Voorter paulien.voorter@gmail.com | p.voorter@maastrichtuniversity.nl | 
 
 
 ## Version History
+
 January 2022     Paulien Voorter
+
 June 2021        Oliver Gurney-Champion and Misha Kaandorp https://github.com/oliverchampion/IVIMNET
+
 August 2019      Sebastiano Barbieri: https://github.com/sebbarb/deep_ivim
 
