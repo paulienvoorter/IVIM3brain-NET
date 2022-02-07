@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct 18 09:17:40 2021
-
-@author: g10041175
-"""
-
-"""
-September 2020 by Oliver Gurney-Champion
+Created September 2020 by Oliver Gurney-Champion & Misha Kaandorp
 oliver.gurney.champion@gmail.com / o.j.gurney-champion@amsterdamumc.nl
 https://www.github.com/ochampion
+
+Adapted January 2022 by Paulien Voorter
+p.voorter@maastrichtuniversity.nl 
+https://www.github.com/paulienvoorter
 
 Code is uploaded as part of the publication: Voorter et al. Physics-informed neural networks improve three-component IVIM fitting in cerebrovascular disease (2022)
 
