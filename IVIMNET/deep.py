@@ -5,7 +5,7 @@ https://www.github.com/ochampion
 Built on code by Sebastiano Barbieri: https://github.com/sebbarb/deep_ivim
 
 
-Revised January 2022 by Paulien Voorter
+Adapted January 2022 by Paulien Voorter
 p.voorter@maastrichtuniversity.nl 
 https://www.github.com/paulienvoorter
 
