@@ -3,7 +3,7 @@ Created September 2020 by Oliver Gurney-Champion & Misha Kaandorp
 oliver.gurney.champion@gmail.com / o.j.gurney-champion@amsterdamumc.nl
 https://www.github.com/ochampion
 
-Revised January 2022 by Paulien Voorter
+Adapted January 2022 by Paulien Voorter
 p.voorter@maastrichtuniversity.nl 
 https://www.github.com/paulienvoorter
 
