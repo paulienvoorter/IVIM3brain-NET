@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created September 2020 by Oliver Gurney-Champion & Misha Kaandorp
 oliver.gurney.champion@gmail.com / o.j.gurney-champion@amsterdamumc.nl
