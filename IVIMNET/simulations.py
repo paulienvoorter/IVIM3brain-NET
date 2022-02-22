@@ -103,7 +103,8 @@ def sim(SNR, arg):
                 #train network and predict parameters with one process
                 else:
                     net = deep.learn_IVIM(IVIM_signal_noisy, arg.sim.bvalues, arg)
-                    paramsNN[aa,bb] = deep.predict_IVIM(IVIM_signal_noisy[:arg.sim.num_samples_eval, :], arg.sim.bvalues, net, arg)
+                    for bb in range(arg.sim.n_ensemble):
+                        paramsNN[aa,bb] = deep.predict_IVIM(IVIM_signal_noisy[:arg.sim.num_samples_eval, :], arg.sim.bvalues, net, arg)
                 if arg.train_pars.use_cuda:
                    torch.cuda.empty_cache()
             else: #no ensemble of networks  
