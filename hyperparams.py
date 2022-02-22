@@ -76,7 +76,7 @@ class lsqfit:
     def __init__(self):
         self.do_fit = True # skip lsq fitting
         self.fitS0 = True # indicates whether to fit S0 (True) or fix it to 1 in the least squares fit.
-        self.jobs = 4 # number of parallel jobs. If set to 1, no parallel computing is used
+        self.jobs = 1 # number of parallel jobs. If set to 1, no parallel computing is used
         self.bounds = ([0.9, 0.0001, 0.0, 0.0015, 0.0, 0.004], [1.1, 0.0015, 0.4, 0.004, 0.2, 0.2]) # S0, Dpar, Fint, Dint, Fmv, Dmv
 
 class sim:
@@ -88,7 +88,7 @@ class sim:
         self.distribution = 'normal' #Define distribution from which IVIM parameters are sampled. Try 'uniform', 'normal' or 'normal-wide'
         self.repeats = 1 # this is the number of repeats for simulations to assess the stability
         self.n_ensemble = 20 # this is the number of instances in the network ensemble
-        self.jobs = 4 # number of processes used to train the network instances of the ensemble in parallel (advised when training on cpu)
+        self.jobs = 1 # number of processes used to train the network instances of the ensemble in parallel (advised when training on cpu)
         self.IR = True #True for IR-IVIM, False for IVIM without inversion recovery
         self.rician = False # add rician noise to simulations; if false, gaussian noise is added instead
         self.range = ([0.0001, 0.0, 0.0015, 0.0, 0.004], [0.0015, 0.40, 0.004, 0.2, 0.2]) # Dpar, Fint, Dint, Fmv, Dmv
