@@ -1,6 +1,6 @@
 # IVIM3brain-NET
 
-This repository contains the code regarding our submitted publication: Physics-informed neural networks improve three-component IVIM fitting in cerebrovascular disease
+This repository contains the code regarding our submitted publication: Physics-informed neural networks improve three-component model fitting of intravoxel incoherent motion MR imaging in cerebrovascular disease
 
 ## Description
 This code synthesizes three-component IVIM decay curves. Several fitting algorithms are implemented to fit the IVIM model to these synthesized curves: least squares (LSQ), non-negative least squares (NNLS) and physics-informed neural networks (PI-NN). 
