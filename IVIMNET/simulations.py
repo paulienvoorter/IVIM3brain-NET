@@ -280,13 +280,13 @@ def sim_signal(SNR, bvalues, IR = True, sims=1000000, distribution = 'normal', D
         # fill arrays
         for i in range(0, sims - 1):
             noise_imag[i,] = rg.normal(0, 1 / SNR, (1, len(bvalues)))
+            noise_real[i,] = rg.normal(0, 1 / SNR, (1, len(bvalues)))
         if rician:
             # add Rician noise as the square root of squared gaussian distributed real signal + noise and imaginary noise
-            noise_real[i,] = rg.normal(0, 1 / SNR, (1, len(bvalues)))
             data_sim = np.sqrt(np.power(data_sim + noise_real, 2) + np.power(noise_imag, 2))
         else:
             # or add Gaussian noise
-            data_sim = data_sim + noise_imag
+            data_sim = data_sim + noise_real
     else:
         data_sim = data_sim
 
