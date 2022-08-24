@@ -85,12 +85,12 @@ class sim:
         self.SNR = 35 # the SNR to simulate at
         self.sims = 11500000 # number of simulations to run
         self.num_samples_eval = 10000 # number of simualtiosn te evaluate. This can be lower than the number run. Particularly to save time when fitting. More simulations help with generating sufficient data for the neural network
-        self.distribution = 'normal' #Define distribution from which IVIM parameters are sampled. Try 'uniform', 'normal' or 'normal-wide'
+        self.distribution = 'uniform' #Define distribution from which IVIM parameters are sampled. Try 'uniform', 'normal' or 'normal-wide'
         self.repeats = 1 # this is the number of repeats for simulations to assess the stability
         self.n_ensemble = 20 # this is the number of instances in the network ensemble
         self.jobs = 1 # number of processes used to train the network instances of the ensemble in parallel (advised when training on cpu)
         self.IR = True #True for IR-IVIM, False for IVIM without inversion recovery
-        self.rician = False # add rician noise to simulations; if false, gaussian noise is added instead
+        self.rician = True # add rician noise to simulations; if false, gaussian noise is added instead
         self.range = ([0.0001, 0.0, 0.0015, 0.0, 0.004], [0.0015, 0.40, 0.004, 0.2, 0.2]) # Dpar, Fint, Dint, Fmv, Dmv
  
 class rel_times:
